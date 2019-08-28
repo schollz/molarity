@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My first Vue app</title>
+    <script src="/static/js/vue.js"></script>
+    <link href="/static/css/z.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <main id="app">
+        <h1>Molarity calculator</h1>
+        <p>{{ message }}<input v-model="message"></p>
+        <p>{{ message }}<input v-model="message"></p>
+        <p>{{ message }}<input v-model="message"></p>
+    </main>
+    <script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!'
+        }
+    })
+    </script>
+</body>
+
+</html>
